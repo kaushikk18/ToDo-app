@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #e2d8df;
+  background-color: #2a1742cc;
   color: #444;
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  color: rgb(179, 131, 226);
+  color: rgb(253, 156, 189);
   font-size: 10rem;
   text-align: center;
   opacity: 0.4;
@@ -28,7 +28,6 @@ h1 {
 
 .flex-child-1 {
   width: 50%;
-
   border-radius: 8px;
   padding: 20px 20px 20px 20px;
   position: relative;
@@ -37,7 +36,6 @@ h1 {
 
 .flex-child-2 {
   width: 50%;
-
   border-radius: 8px;
   padding: 150px 20px 20px 20px;
   position: relative;
@@ -51,8 +49,10 @@ form {
 }
 
 .input {
+  background-color: white;
+  border-radius: 5px;
   border: none;
-  color: #444;
+  color: black;
   font-size: 2rem;
   padding: 1rem 2rem;
   display: block;
@@ -60,7 +60,7 @@ form {
 }
 
 .input::placeholder {
-  color: #d5d5d5;
+  color: rgb(122, 122, 122);
 }
 
 .todos {
@@ -84,5 +84,33 @@ form {
 
 small {
   color: #b5b5b5;
-  text-align: center;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  .flexbox {
+    flex-direction: column;
+    margin-top: 2em;
+  }
+  .flex-child-1 {
+    right: 0px;
+  }
+  .flex-child-2 {
+    left: 0px;
+    width: 100%;
+    padding-top: 1em;
+  }
+  form {
+    width: 100%;
+  }
+  .input {
+    font-size: 10px;
+  }
+  .todos li {
+    font-size: 10px;
+  }
 }
