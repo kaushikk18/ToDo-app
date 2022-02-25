@@ -1,3 +1,3 @@
 # ToDo-app
 
-Working Demo - https://kaushikk18.github.io/todo-app/
+<a href="https://kaushikk18.github.io/todo-app/">Working Demo</a>
